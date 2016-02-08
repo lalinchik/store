@@ -44,8 +44,8 @@ header {
     display: block;
     flex: 1;
     border: 1px solid #a3a3a3;
-    padding: 0 15px;
-    font-size: 12px;
+    padding: 10px 20px;
+    font-size: 11px;
 }
 
 .search-icon {
@@ -126,9 +126,10 @@ header {
 
 .nav-link {
     color: #303030;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
 }
+
 
 .hero {
     display: flex;
@@ -167,6 +168,10 @@ main h1 {
     margin-top: 15px;
 }
 
+.update-button:hover{
+    background: #e5e5e5;
+}
+
 .photos {
     display: flex;
     flex-direction: column;
@@ -175,45 +180,47 @@ main h1 {
 
 .photo:nth-child(1) {
     height: 230px;
-    background: coral;
 }
 
 .photo:nth-child(2) {
     height: 200px;
-    background: #b97d1b;
 }
 
 .photo:nth-child(3) {
     height: 150px;
-    background: green;
 }
 
 .photo:nth-child(4) {
     height: 275px;
-    background: greenyellow;
 }
 
 .photo:nth-child(5) {
     height: 275px;
-    background: grey;
 }
 
 .photo:nth-child(6) {
     height: 230px;
-    background: yellow;
 }
 
 .photo:nth-child(7) {
     height: 200px;
-    background: #728bb9;
 }
 
 .photo:nth-child(8) {
     height: 275px;
     background: red;
 }
+.photo{
+    display: inline-block;
+    position: relative;
+}
 
-.photo {
+.wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -221,6 +228,10 @@ main h1 {
     flex-direction: column;
     justify-content: center;
 }
+.photo img{
+     width: 100%;
+     height: 100%;
+ }
 
 .photo h3 {
     font-size: 24px;
@@ -231,6 +242,7 @@ main h1 {
     font-family: Georgia, serif;
     font-size: 18px;
     line-height: 1.45em;
+
 }
 
 .subscription h2 {
@@ -261,8 +273,20 @@ main h1 {
     border: 1px solid #a3a3a3;
     font-size: 11px;
     font-style: italic;
-    color: #606060;
+    color: #303030;
     padding: 10px 20px;
+}
+
+.subscription-form input::-webkit-input-placeholder {
+     color: #303030;
+ }
+
+.subscription-form input:-ms-input-placeholder {
+    color: #303030;
+}
+
+.subscription-form input::-moz-placeholder {
+    color: #303030;
 }
 
 .form-btn {
@@ -272,6 +296,10 @@ main h1 {
     background: #f68263;
     color: white;
     font-size: 14px;
+}
+
+.form-btn:hover{
+    background: #e67429;
 }
 
 .gallery {
@@ -291,12 +319,17 @@ footer{
     border-left: 1px solid #e5e5e5;
     padding-left: 15px;
 }
-.footer-column a{
+.footer-column .link{
     text-decoration: none;
     font-size: 16px;
     line-height: 1.7;
     color: #303030;
 }
+
+.link:hover{
+    text-decoration: underline;
+}
+
 .footer-column.social {
     display: flex;
     flex-direction: column;
