@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Georgia";
+    src: url(../fonts/georgia-italic.ttf);
+}
+
+body {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-size: 69px;
+    line-height: 1.16;
+    color: #303030;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+main p{
+    font-size: 24px;
+    font-family: Georgia, serif;
+    color: #a3a3a3;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+    main p{
+        margin-bottom: 55px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body{
+        padding: 33px;
+    }
+
+    h1{
+        margin-bottom: 200px;
+    }
+
+    main p{
+        margin-bottom: 253px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        border-left: calc((100vw - 1244px) / 2) solid #e5e5e5;
+        border-right: calc((100vw - 1244px) / 2) solid #e5e5e5;
+    }
+}
