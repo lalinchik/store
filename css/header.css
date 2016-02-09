@@ -1,0 +1,186 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 4px;
+}
+
+.logo {
+    width: 60px;
+    height: 55px;
+    background: #000000;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    line-height: 58px;
+    order: 0;
+}
+
+.separator {
+    flex: 1;
+}
+
+.search {
+    display: flex;
+    order: 4;
+    flex-basis: 100%;
+    margin-top: 16px;
+}
+
+.search-field {
+    display: block;
+    flex: 1;
+    border: 1px solid #a3a3a3;
+    padding: 10px 20px;
+    font-size: 11px;
+}
+
+.search-icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #a3a3a3;
+
+}
+
+.search .search-icon {
+    background: #606060;
+    font-size: 16px;
+    color: white;
+    border-left: none;
+}
+
+.search-field::-webkit-input-placeholder {
+    font-style: italic;
+    color: #303030;
+}
+
+.search-field:-ms-input-placeholder {
+    font-style: italic;
+    color: #303030;
+}
+
+.search-field::-moz-placeholder {
+    font-style: italic;
+    color: #303030;
+}
+
+.search.collapsed {
+    order: 2;
+    flex-basis: inherit;
+    margin-top: 6px;
+}
+
+.search.collapsed .search-field {
+    display: none;
+}
+
+.search.collapsed .search-icon {
+    background: white;
+    color: #303030;
+    border-left: 1px solid #a3a3a3;
+}
+
+.toolbar {
+    order: 3;
+    margin-left: 14px;
+}
+
+.basket-icon {
+    width: 31px;
+    height: 40px;
+    font-size: 26px;
+    line-height: 47px;
+}
+
+.toolbar span {
+    letter-spacing: 0.5px;
+    vertical-align: super;
+    font-size: 16px;
+    color: #303030;
+}
+
+.toolbar .quantity{
+    vertical-align: baseline;
+}
+
+.main-menu {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    order: 5;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
+}
+
+.main-menu ul {
+    line-height: 58px;
+}
+
+.nav-link {
+    color: #303030;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .search {
+        order: 3;
+        flex-basis: inherit;
+        /*margin-top: 5px;*/
+    }
+
+    .search .search-field {
+        width: 150px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        align-items: flex-start;
+        padding-bottom: 35px
+    }
+
+    .logo{
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .main-menu {
+        flex-basis: inherit;
+        order: 1;
+        margin-top: 0;
+        border-top: none;
+        margin-left: 32.5px;
+
+    }
+
+    .main-menu ul {
+        display: flex;
+        line-height: 39px;
+    }
+
+    .main-menu ul li {
+        padding: 0 23.5px;
+    }
+
+    .separator {
+        order: 2;
+    }
+
+    .toolbar{
+        margin-left: 24px;
+    }
+
+}
