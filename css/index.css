@@ -230,8 +230,7 @@ main h1 {
     }
 
 .photos-container img{
-   min-width: 200px;
-    min-height: 100%;
+    height: 120px;
 }
 
 .link:hover{

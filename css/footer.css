@@ -30,6 +30,7 @@ footer h2 {
     line-height: 1.16em;
     text-align: center;
     padding-top: 40px;
+    /*padding-top: 43px;*/
     margin-bottom: 45px;
 }
 
@@ -51,7 +52,7 @@ footer h2 {
 }
 
 .copyrights {
-    margin-bottom: 37px;
+    margin-bottom: 45px;
 }
 
 .social-buttons {
@@ -71,12 +72,15 @@ footer h2 {
 }
 
 .social-button:hover {
-    background: #606060;
-    color: white;
+    background: #e5e5e5;
 }
 
 .social-button, .icon {
     cursor: pointer;
+}
+
+.link:hover{
+    text-decoration: underline;
 }
 
 @media (min-width: 1024px) {
@@ -112,4 +116,5 @@ footer h2 {
     .social-button {
         margin-right: 2px;
     }
+
 }
