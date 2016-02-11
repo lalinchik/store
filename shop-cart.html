@@ -3,8 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <title>Shopping Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/shop-cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/common/header.js" async></script>
 </head>
 <body>
+<header>
+    <a class="logo" href="index.html">SH</a>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#" class="nav-link link">Woman</a></li>
+            <li><a href="#" class="nav-link link">Men</a></li>
+            <li><a href="#" class="nav-link link">Kids</a></li>
+            <li><a href="#" class="nav-link link">Coming Soon</a></li>
+        </ul>
+    </nav>
+    <div class="separator"></div>
+    <div class="search collapsed">
+        <input class="search-field" type="text" placeholder="Search something...">
+        <i class="fa fa-search icon search-icon"></i>
+    </div>
+    <div class="toolbar link">
+        <i class="fa fa-shopping-bag icon basket-icon"></i>
+        <span >Basket (<span class="quantity">0</span>)</span>
+    </div>
+</header>
 
+<main>
+    <nav class="breadcrumb">
+        <ul>
+            <li><a class="breadcrumbs-link link slash" href="#">home</a></li>
+            <li><a class="breadcrumbs-link link slash" href="#">men</a></li>
+            <li><a class="breadcrumbs-link link slash" href="#">shoes</a></li>
+            <li><a class="breadcrumbs-link link " href="#">floral primsoll</a></li>
+        </ul>
+    </nav>
+
+    <h1>Your shopping bag</h1>
+    <p class="subheader">Items reserved for limited time only</p>
+
+    <div class="order-cart">
+        <div class="order-cart-header">
+            <span>product</span>
+            <span>description</span>
+            <span>color</span>
+            <span>size</span>
+            <span>qty</span>
+            <span>amount</span>
+            <span>delete</span>
+        </div>
+        <div class="cart-item">
+            <img class="photo" src="" alt="">
+            <div class="column column1">
+                <div class="description">
+                    <h3 class="item-title">Floral primsoll</h3>
+                    <!--<span class="sequence-number">(1st)</span>-->
+                    <p class="order-number">Ref. 2514/302</p>
+                </div>
+                <span class="color">Black</span>
+                <span class="size">39</span>
+                <input class="quantity" type="number" value="1">
+            </div>
+            <div class="column column2">
+                <span class="amount">€ 99,95</span>
+                <a class="delete" href="#">x</a>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img class="photo" src="" alt="">
+            <div class="column column1">
+                <div class="description">
+                    <h3 class="item-title">Floral primsoll</h3>
+                    <!--<span class="sequence-number">(2nd)</span>-->
+                    <p class="order-number">Ref.2514/302</p>
+                </div>
+                <span class="color">One color</span>
+                <span class="size">M</span>
+                    <input class="quantity" type="number" value="1">
+
+            </div>
+            <div class="column column2">
+                <span class="amount">€ 99,95</span>
+                <a class="delete" href="#">x</a>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img class="photo" src="" alt="">
+            <div class="column column1">
+                <div class="description">
+                    <h3 class="item-title">Floral primsoll</h3>
+                    <!--<span class="sequence-number">(3rt)</span>-->
+                    <p class="order-number">Ref.2514/302</p>
+                </div>
+                <span class="color">One color</span>
+                <span class="size">S</span>
+                <input class="quantity" type="number" value="1">
+            </div>
+            <div class="column column2">
+                <span class="amount">€ 99,95</span>
+                <a class="delete" href="#">x</a>
+            </div>
+        </div>
+
+        <div class="subtotal">
+            <p>Subtotal:&#160;</p>
+            <span class="total-sum">€ 1000</span>
+        </div>
+
+        <button class="buy">order now</button>
+        <a class="link continue-link" href="#">Continue Shopping</a>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-column">
+        <h2>collection</h2>
+        <ul>
+            <li><a class="link" href="#">Woman</a></li>
+            <li><a class="link" href="#">Men</a></li>
+            <li><a class="link" href="#">Kids</a></li>
+            <li><a class="link" href="#">Coming Soon</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2>site</h2>
+        <ul>
+            <li><a class="link" href="#">Terms of Service</a></li>
+            <li><a class="link" href="#">Privacy Policy</a></li>
+            <li><a class="link" href="#">Copyright Policy</a></li>
+            <li><a class="link" href="#">Press Kit</a></li>
+            <li><a class="link" href="#">Support</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h2>Shop</h2>
+        <ul>
+            <li><a class="link" href="#">About Us</a></li>
+            <li><a class="link" href="#">Shipping Methods</a></li>
+            <li><a class="link" href="#">Carrer</a></li>
+            <li><a class="link" href="#">Contacts</a></li>
+        </ul>
+    </div>
+    <div class="footer-column social">
+        <h2>social</h2>
+        <p>Shoper is made with love in Warsaw,</p>
+        <p class="copyrights">2014 &copy; All rights reserved. El Passion</p>
+        <div class="social-buttons">
+            <div class="social-button twitter"><i class="fa fa-twitter"></i></div>
+            <div class="social-button facebook"><i class="fa fa-facebook"></i></div>
+            <div class="social-button instagram"><i class="fa fa-instagram"></i></div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
