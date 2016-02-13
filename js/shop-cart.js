@@ -47,7 +47,9 @@ bag.forEach(function (item, index) {
         bag.splice(index, 1);
         localStorage.setItem("bag", JSON.stringify(bag));
         itemEl.remove();
+        updateTotal();
     });
 });
 
+updateTotal();
 
