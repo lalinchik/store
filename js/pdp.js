@@ -8,18 +8,20 @@ xhr.addEventListener("error", function () {
     alert(xhr.status + ": " + xhr.statusText);
 });
 
-function func(category) {
-    return category.id == getQueryParams().categoryId;
-}
-function find2(json, category) {
-    var c;
-    for (let i = 0; i < json.length; i++) {
-        if (func(category)) {
-            c = category;
-            break;
-        }
+function getBag() {
+    var bag = localStorage.getItem("bag");
+
+    if (bag === 0) {
+        bag = [];
+    } else {
+        bag = JSON.parse(bag);
     }
-    return c;
+    return bag;
+}
+function contains(bag, candidate) {
+    return bag.some(function (item) {
+        return item.product.id == candidate.product.id;
+    })
 }
 xhr.addEventListener("load", function (event) {
     let json = JSON.parse(xhr.responseText);
@@ -74,15 +76,16 @@ xhr.addEventListener("load", function (event) {
             size: product.sizes[0],
             color: product.colors[0]
         };
+        var bag = getBag();
 
-        var bag = localStorage.getItem("bag");
-
-        if(bag === 0) {
-            bag = [];
+        if (!contains(bag, bagItem)) {
+            bag.push(bagItem);
         } else {
-            bag = JSON.parse(bag);
+            var foundItem = bag.find(function (item) {
+                return item.product.id === bagItem.product.id;
+            });
+            foundItem.quantity++;
         }
-        bag.push(bagItem);
         localStorage.setItem("bag", JSON.stringify(bag));
         window.location = "shop-cart.html";
     });
@@ -100,5 +103,4 @@ function getQueryParams() {
     return result;
 }
 
-document.querySelector("")
    
