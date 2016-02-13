@@ -34,7 +34,6 @@ bag.forEach(function (item, index) {
 
     document.querySelector(".order-cart").insertBefore(itemEl, document.querySelector(".subtotal"));
 
-    console.log(bag);
 
     itemEl.querySelector(".quantity").addEventListener("change", function (event) {
         item.quantity = this.value;
