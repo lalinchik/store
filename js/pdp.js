@@ -37,6 +37,13 @@ xhr.addEventListener("load", function (event) {
         return product.id == getQueryParams().productId;
     });
 
+    var bagItem = {
+        product: product,
+        quantity: 1,
+        size: product.sizes[0],
+        color: product.colors[0]
+    };
+
 
     var productEl = document.createElement("div");
     productEl.classList.add("product");
@@ -73,6 +80,12 @@ xhr.addEventListener("load", function (event) {
         var attributeEl = document.createElement("button");
         attributeEl.classList.add("attribute-btn");
         attributeEl.textContent = size;
+
+        attributeEl.addEventListener("click", function (event) {
+            bagItem.size = size;
+            console.log(size);
+        });
+
         productEl.querySelector(".attribute").appendChild(attributeEl);
     });
 
@@ -82,19 +95,13 @@ xhr.addEventListener("load", function (event) {
         document.querySelector(".buy").classList.add("success");
         document.querySelector(".buy").textContent = "product added";
 
-        var bagItem = {
-            product: product,
-            quantity: 1,
-            size: product.sizes[0],
-            color: product.colors[0]
-        };
         var bag = getBag();
 
         if (!contains(bag, bagItem)) {
             bag.push(bagItem);
         }
         localStorage.setItem("bag", JSON.stringify(bag));
-
+        document.querySelector(".quantity").textContent = bag.length;
     });
 
     let smallList = document.querySelectorAll(".small-photo");
