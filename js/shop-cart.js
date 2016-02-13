@@ -55,3 +55,7 @@ bag.forEach(function (item, index) {
 
 updateTotal();
 
+document.querySelector(".buy").addEventListener("click", function (event) {
+    localStorage.clear();
+    window.location = "thank-you.html";
+});
