@@ -43,9 +43,15 @@ xhr.addEventListener("load", function (event) {
     productEl.innerHTML = `<div class="product-photos">
             <img class="big-photo" src="${product.images[0]}" alt="">
             <div class="small-photo-wrap">
-            <img class="small-photo" src="${product.images[1]}" alt="">
-            <img class="small-photo" src="${product.images[2]}" alt="">
-            <img class="small-photo" src="${product.images[3]}" alt="">
+                <div class="small-photo-container">
+                    <img class="small-photo" src="${product.images[1]}" alt="">
+                </div>
+                <div class="small-photo-container">
+                     <img class="small-photo" src="${product.images[2]}" alt="">
+                 </div>
+                 <div class="small-photo-container">
+                    <img class="small-photo" src="${product.images[3]}" alt="">
+                 </div>
             </div>
         </div>
 
@@ -91,6 +97,16 @@ xhr.addEventListener("load", function (event) {
         }
         localStorage.setItem("bag", JSON.stringify(bag));
         window.location = "shop-cart.html";
+    });
+
+    let smallList = document.querySelectorAll(".small-photo");
+    let smallArray = Array.prototype.slice.call(smallList, 0);
+    console.log(smallList);
+    console.log(smallArray);
+    smallArray.forEach(function (element) {
+        element.addEventListener("click", function (event) {
+            document.querySelector(".big-photo").src = this.src;
+        });
     });
 });
 
