@@ -114,21 +114,6 @@ body {
         width: 225px;
     }
 
-    .goods-item:nth-last-child(4) img {
-        width: 225px;
-        height: 110px;
-    }
-
-    .goods-item:nth-last-child(2) img {
-        width: 225px;
-        height: 225px;
-    }
-
-    .goods-item:nth-last-child(1) img {
-        width: 200px;
-        height: 254px;
-    }
-
 }
 
 @media (min-width: 1024px) {
@@ -159,21 +144,6 @@ body {
 
     .wrap-img {
         width: 165px;
-    }
-
-    .goods-item:nth-last-child(4) img {
-        width: 165px;
-        height: 83px;
-    }
-
-    .goods-item:nth-last-child(2) img {
-        width: 165px;
-        height: 165px;
-    }
-
-    .goods-item:nth-last-child(1) img {
-        width: 165px;
-        height: 210px;
     }
 
 }
