@@ -39,6 +39,7 @@ bag.forEach(function (item, index) {
     itemEl.querySelector(".quantity").addEventListener("change", function (event) {
         item.quantity = this.value;
         itemEl.querySelector(".amount span").textContent = item.product.price * item.quantity;
+        localStorage.setItem("bag", JSON.stringify(bag));
         updateTotal();
     });
 
