@@ -157,6 +157,10 @@ body {
     background: #e67429;
 }
 
+.success, .success:hover{
+    background: #008000;
+}
+
 .gallery {
     display: none;
     height: 120px;

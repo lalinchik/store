@@ -79,6 +79,9 @@ xhr.addEventListener("load", function (event) {
     document.querySelector("main").insertBefore(productEl, document.querySelector(".gallery"));
 
     document.querySelector(".buy").addEventListener("click", function (event) {
+        document.querySelector(".buy").classList.add("success");
+        document.querySelector(".buy").textContent = "product added";
+
         var bagItem = {
             product: product,
             quantity: 1,
@@ -89,14 +92,9 @@ xhr.addEventListener("load", function (event) {
 
         if (!contains(bag, bagItem)) {
             bag.push(bagItem);
-        } else {
-            var foundItem = bag.find(function (item) {
-                return item.product.id === bagItem.product.id;
-            });
-            foundItem.quantity++;
         }
         localStorage.setItem("bag", JSON.stringify(bag));
-        window.location = "shop-cart.html";
+
     });
 
     let smallList = document.querySelectorAll(".small-photo");
