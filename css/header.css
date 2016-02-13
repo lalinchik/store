@@ -93,6 +93,13 @@ header {
 .toolbar {
     order: 3;
     margin-left: 14px;
+    text-decoration: none;
+}
+.toolbar:active{
+    color: #303030;
+}
+.toolbar i{
+   color: #303030;
 }
 
 .basket-icon {
