@@ -25,15 +25,18 @@ function contains(bag, candidate) {
 }
 xhr.addEventListener("load", function (event) {
     let json = JSON.parse(xhr.responseText);
-    console.log(getQueryParams());
 
     var category = json.find(function (category) {
         return category.id == getQueryParams().categoryId;
     });
 
+    if (product) {
+        window.location = "notFound.html";
+    }
     var product = category.products.find(function (product) {
         return product.id == getQueryParams().productId;
     });
+
 
     var productEl = document.createElement("div");
     productEl.classList.add("product");
