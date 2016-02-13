@@ -56,6 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .product-name {
@@ -86,6 +87,8 @@ body {
     line-height: 30px;
     color: #606060;
     text-align: center;
+    word-break: break-all;
+    width: 100%;
 }
 
 .attribute h3 {

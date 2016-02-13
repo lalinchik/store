@@ -61,6 +61,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /*list-style-type: none;*/
+    counter-reset: counter;
 }
 
 .order-cart-header {
@@ -228,7 +230,7 @@ input[type="number"] {
     }
 
     .breadcrumb {
-        margin-bottom: 100px;
+        margin-bottom: 52px;
     }
 
     .breadcrumb ul {
@@ -243,15 +245,22 @@ input[type="number"] {
         font-size: 12px;
         letter-spacing: 1px;
     }
+    .subheader{
+        margin-bottom: 101px;
+    }
 
     .order-cart-header {
-        display: block;
+        display: flex;
         flex-basis: 100%;
         font-size: 14px;
         text-transform: uppercase;
         color: #909090;
-        text-align: start;
+        text-align: center;
         margin-bottom: 13px;
+    }
+    .order-cart-header *,
+    .cart-item *{
+        outline: 1px dashed lime;
     }
 
     .order-cart-header * {
@@ -264,22 +273,27 @@ input[type="number"] {
 
     .order-cart-header span:nth-child(2) {
         width: 385px;
+        flex: 1;
     }
 
     .order-cart-header span:nth-child(3) {
-        width: 118px;
+        width: 100px;
     }
 
     .order-cart-header span:nth-child(4) {
-        width: 83px;
+        width: 100px;
     }
 
     .order-cart-header span:nth-child(5) {
-        width: 73px;
+        width: 100px;
     }
 
     .order-cart-header span:nth-child(6) {
-        width: 96px;
+        width: 100px;
+    }
+
+    .order-cart-header span:nth-child(7) {
+        width: 100px;
     }
 
     .order-cart {
@@ -306,36 +320,46 @@ input[type="number"] {
 
     }
 
-    .item-title {
-        width: 385px;
+    .description {
+        flex: 1;
     }
 
     .color, .size {
-        text-align: start;
+        text-align: center;
     }
 
     .color {
-        width: 136px;
+        width: 100px;
     }
 
     .size {
-        width: 71px;
+        width: 100px;
+    }
+
+    input[type="number"]{
+        width: 100px;
+        text-align: right;
+        margin: 0;
+        padding-right: 35px;
     }
 
     .column2 {
-        width: 145px;
+        width: 200px;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
     }
 
     .amount {
+        width: 100px;
+        text-align: center;
         order: 1;
         margin: 0;
     }
 
     .delete {
-        margin-right: 25px;
+        width: 100px;
+        text-align: center;
     }
 
     .subtotal {
@@ -364,5 +388,14 @@ input[type="number"] {
     body {
         border-left: calc((100vw - 1244px) / 2) solid #e5e5e5;
         border-right: calc((100vw - 1244px) / 2) solid #e5e5e5;
+    }
+
+
+    .subtotal p {
+        margin-right: 45px;
+    }
+
+    .subtotal {
+        padding-right: 130px;
     }
 }
