@@ -16,7 +16,9 @@ var bag = JSON.parse(localStorage.getItem("bag"));
 bag.forEach(function (item, index) {
     var itemEl = document.createElement("div");
     itemEl.classList.add("cart-item");
-    itemEl.innerHTML = `<img class="photo" src="${item.product.images[0]}" alt="">
+    itemEl.innerHTML = `<div class="photo-wrapper">
+        <img class="photo" src="${item.product.images[0]}" alt="">
+     </div>
             <div class="column column1">
                 <div class="description">
                     <h3 class="item-title">${item.product.name} (${getGetOrdinal(index + 1)})</h3>
