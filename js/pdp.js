@@ -20,7 +20,7 @@ function getBag() {
 
 function contains(bag, candidate) {
     return bag.some(function (item) {
-        return item.product.id == candidate.product.id;
+        return item.product.id == candidate.product.id && item.color == candidate.color && item.size == candidate.size;
     })
 }
 xhr.addEventListener("load", function (event) {
@@ -83,7 +83,6 @@ xhr.addEventListener("load", function (event) {
 
         attributeEl.addEventListener("click", function (event) {
             bagItem.size = size;
-            console.log(size);
         });
 
         productEl.querySelector(".attribute").appendChild(attributeEl);
