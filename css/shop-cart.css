@@ -263,10 +263,6 @@ input[type="number"] {
         text-align: center;
         margin-bottom: 13px;
     }
-    .order-cart-header *,
-    .cart-item *{
-        outline: 1px dashed lime;
-    }
 
     .order-cart-header * {
         display: inline-block;
