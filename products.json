@@ -1,0 +1,319 @@
+[
+  {
+    "id": 1,
+    "category": "coats",
+    "products": [
+      {
+        "id": 1,
+        "images": [
+          "img/products/coats/coat1/NA022EMHSJ99_1_v2.jpg",
+          "img/products/coats/coat1/NA022EMHSJ99_6_v1.jpg",
+          "img/products/coats/coat1/NA022EMHSJ99_7_v1.jpg",
+          "img/products/coats/coat1/NA022EMHSJ99_8_v1.jpg"
+        ],
+        "name": "Native Youth",
+        "articleNumber": "Ref. 2514/302",
+        "price": "250",
+        "description": "Native Youth Coat made of wool blend drape and insulated with synthetic padding. Model straight cut. Details: buckle on buttons, one inner and two outer pockets, turn-down collar with sheepskin trim under the lapel, quilted lining, slot, strap on the sleeves.",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "black",
+          "brown"
+        ]
+      },
+      {
+        "id": 2,
+        "images": [
+          "img/products/coats/coat2/DS003EMGGG05_1_v2.jpg",
+          "img/products/coats/coat2/DS003EMGGG05_6_v1.jpg",
+          "img/products/coats/coat2/DS003EMGGG05_7_v1.jpg",
+          "img/products/coats/coat2/DS003EMGGG05_8_v1.jpg"
+        ],
+        "name": "D-Struct",
+        "articleNumber": "Ref. 2514/302",
+        "price": "200",
+        "description": "Drab coat in black from d-Struct. Straight cut model is complemented by a hood trimmed with faux fur. Details: zip and buttons, four pockets on the outside and one vertical pocket inside, smooth textile lining.",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "black",
+          "brown"
+        ]
+      },
+      {
+        "id": 3,
+        "images": [
+          "img/products/coats/coat3/CE007EMGYH04_1_v2.jpg",
+          "img/products/coats/coat3/CE007EMGYH04_6_v1.jpg",
+          "img/products/coats/coat3/CE007EMGYH04_7_v1.jpg",
+          "img/products/coats/coat3/CE007EMGYH04_8_v1.jpg"
+        ],
+        "name": "Celio",
+        "articleNumber": "Ref. 2514/302",
+        "price": "350",
+        "description": "Celio coat made of thick woolen cloth with a high content of wool and insulated with a thin layer of padding polyester. Model straight cut. Details: hood, removable insert with a zip and a hood with drawstring casing, fastener buttons, two internal and six external pockets, strap on the sleeves.",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "black",
+          "grey"
+        ]
+      },
+      {
+        "id": 4,
+        "images": [
+          "img/products/coats/coat4/RI004EMGWR75_1_v2.jpg",
+          "img/products/coats/coat4/RI004EMGWR75_6_v1.jpg",
+          "img/products/coats/coat4/RI004EMGWR75_7_v1.jpg",
+          "img/products/coats/coat4/RI004EMGWR75_8_v1 (1).jpg"
+        ],
+        "name": "River Island",
+        "articleNumber": "Ref. 2514/302",
+        "price": "320",
+        "description": "Wool blend coat from black drape from River Island. Details: straight leg cut, zip, collar supplemented by buttons, two breast pockets with zipper, two side pockets without fastening slot, edging made of artificial leather.",
+        "sizes": [
+          "XS",
+          "S",
+          "M",
+          "L",
+          "XL"
+        ],
+        "colors": [
+          "black",
+          "brown"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "shirts",
+    "products": [
+      {
+        "id": 5,
+        "category": "shirts",
+        "images": [
+          "img/products/shirt/shirt1/OO001EMHTJ96_1_v2.jpg",
+          "img/products/shirt/shirt1/OO001EMHTJ96_6_v1.jpg",
+          "img/products/shirt/shirt1/OO001EMHTJ96_7_v1.jpg",
+          "img/products/shirt/shirt1/OO001EMHTJ96_8_v1.jpg"
+        ],
+        "name": "Oodji",
+        "articleNumber": "Ref. 2514/302",
+        "price": "65",
+        "description": "Long-sleeved shirts oodji made of smooth cotton. Details: turn-down collar with buttons; buttoned; fitted silhouette; rounded bottom.",
+        "sizes": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ],
+        "colors": [
+          "black",
+          "white"
+        ]
+      },
+      {
+        "id": 6,
+        "category": "shirts",
+        "images": [
+          "img/products/shirt/shirt2/GS001EMGXK80_1_v2.jpg",
+          "img/products/shirt/shirt2/GS001EMGXK80_6_v1.jpg",
+          "img/products/shirt/shirt2/GS001EMGXK80_7_v1.jpg",
+          "img/products/shirt/shirt2/GS001EMGXK80_8_v1.jpg"
+        ],
+        "name": "G-Star",
+        "articleNumber": "Ref. 2514/302",
+        "price": "45",
+        "description": "Shirt by G-Star is made of cotton textile in dark blue. Details: fitted cut; clasp on the buttons; pockets with flaps.",
+        "sizes": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ],
+        "colors": [
+          "dark blue",
+          "white"
+        ]
+      },
+      {
+        "id": 7,
+        "category": "shirts",
+        "images": [
+          "img/products/shirt/shirt3/OO001EMHUI44_1_v2.jpg",
+          "img/products/shirt/shirt3/OO001EMHUI44_6_v1.jpg",
+          "img/products/shirt/shirt3/OO001EMHUI44_7_v1.jpg",
+          "img/products/shirt/shirt3/OO001EMHUI44_8_v1.jpg"
+        ],
+        "name": "Oodji ",
+        "articleNumber": "Ref. 2514/302",
+        "price": "55",
+        "description": "Oodji shirt is made of cotton. Model close fitting cut. Details: Butt-down collar, strap and buttoned cuffs, long rest.",
+        "sizes": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ],
+        "colors": [
+          "dark blue",
+          "white"
+        ]
+      },
+      {
+        "id": 8,
+        "category": "shirts",
+        "images": [
+          "img/products/shirt/shirt4/OO001EMHTJ98_1_v2.jpgi",
+          "img/products/shirt/shirt4/OO001EMHTJ98_6_v1 (1).jpg",
+          "img/products/shirt/shirt4/OO001EMHTJ98_6_v1.jpg",
+          "img/products/shirt/shirt4/OO001EMHTJ98_8_v1.jpg"
+        ],
+        "name": "Oodji ",
+        "articleNumber": "Ref. 2514/302",
+        "price": "50",
+        "description": "Long-sleeved shirts oodji made of smooth elastic cotton. Details: turn-down collar with buttons; buttoned; fitted silhouette; rounded bottom.",
+        "sizes": [
+          "37",
+          "38",
+          "39",
+          "40",
+          "41"
+        ],
+        "colors": [
+          "dark blue",
+          "white"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "shoes",
+    "products":[
+      {
+        "id": 9,
+        "category":"shoes",
+        "images": [
+          "img/products/shoes/shoes1/25870172_001.jpg",
+          "img/products/shoes/shoes1/25870172_002.jpg",
+          "img/products/shoes/shoes1/25870172_003.jpg",
+          "img/products/shoes/shoes1/25870172_004.jpg"
+        ],
+        "name": "Marco Bocchino",
+        "articleNumber": "Ref. 2514/302",
+        "price": "450",
+        "description": " Marco Bocchino made of synthetic nubuck. Details: elasticised gores, interior trim and insole made of genuine leather, grooved outsole.",
+        "sizes": [
+          "40",
+          "41",
+          "42",
+          "43",
+          "44"
+        ],
+        "colors": [
+          "black",
+          "brown"
+        ]
+      },
+
+      {
+        "id": 10,
+        "category":"shoes",
+        "images": [
+          "img/products/shoes/shoes2/25855233_001.jpg",
+          "img/products/shoes/shoes2/25855233_002.jpg",
+          "img/products/shoes/shoes2/25855233_003.jpg",
+          "img/products/shoes/shoes2/25855233_004.jpg"
+        ],
+        "name": "Carlo Bellini",
+        "articleNumber": "Ref. 2514/302",
+        "price": "300",
+        "description": "Carlo Bellini Shoes made of genuine leather with perforations. Details: lacing; interior trim and insole made of genuine leather; sole polymer.",
+        "sizes": [
+          "40",
+          "41",
+          "42",
+          "43",
+          "44"
+        ],
+        "colors": [
+          "black",
+          "dark blue"
+        ]
+      },
+
+      {
+        "id": 11,
+        "category":"shoes",
+        "images": [
+          "img/products/shoes/shoes3/25841471_001.jpg",
+          "img/products/shoes/shoes3/25841471_002.jpg",
+          "img/products/shoes/shoes3/25841471_003.jpg",
+          "img/products/shoes/shoes3/25841471_004.jpg"
+        ],
+        "name": "Instreet",
+        "articleNumber": "Ref. 2514/302",
+        "price": "350",
+        "description": "Shoes Instreet made of artificial leather, inner lining and insole - made of genuine leather. Details: rounded the cape, elastic inserts, molded polymer outsole with relief.",
+        "sizes": [
+          "40",
+          "41",
+          "42",
+          "43",
+          "44"
+        ],
+        "colors": [
+          "black",
+          "dark blue"
+        ]
+      },
+
+      {
+        "id": 12,
+        "category":"shoes",
+        "images": [
+          "img/products/shoes/shoes4/25872617_001.jpg",
+          "img/products/shoes/shoes4/25872617_002.jpg",
+          "img/products/shoes/shoes4/25872617_003.jpg",
+          "img/products/shoes/shoes4/25872617_004.jpg"
+        ],
+        "name": "Bugatti",
+        "articleNumber": "Ref. 2514/302",
+        "price": "500",
+        "description": "Bugatti shoes are made of natural suede. Details: lacing, soft insole made of genuine leather, textile interior trim, grooved outsole, textile inserts.",
+        "sizes": [
+          "40",
+          "41",
+          "42",
+          "43",
+          "44"
+        ],
+        "colors": [
+          "black",
+          "dark brown"
+        ]
+      }
+    ]
+  }
+]
