@@ -75,11 +75,17 @@ xhr.addEventListener("load", function (event) {
             color: product.colors[0]
         };
 
-        var bag = [];
+        var bag = localStorage.getItem("bag");
+
+        if(bag === 0) {
+            bag = [];
+        } else {
+            bag = JSON.parse(bag);
+        }
         bag.push(bagItem);
-        localStorage.setItem("bag", bag);
+        localStorage.setItem("bag", JSON.stringify(bag));
         window.location = "shop-cart.html";
-    })
+    });
 });
 
 function getQueryParams() {
