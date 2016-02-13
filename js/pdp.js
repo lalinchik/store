@@ -10,14 +10,14 @@ xhr.addEventListener("error", function () {
 
 function getBag() {
     var bag = localStorage.getItem("bag");
-
-    if (bag === 0) {
+    if (!bag) {
         bag = [];
     } else {
         bag = JSON.parse(bag);
     }
     return bag;
 }
+
 function contains(bag, candidate) {
     return bag.some(function (item) {
         return item.product.id == candidate.product.id;
@@ -101,8 +101,6 @@ xhr.addEventListener("load", function (event) {
 
     let smallList = document.querySelectorAll(".small-photo");
     let smallArray = Array.prototype.slice.call(smallList, 0);
-    console.log(smallList);
-    console.log(smallArray);
     smallArray.forEach(function (element) {
         element.addEventListener("click", function (event) {
             document.querySelector(".big-photo").src = this.src;
