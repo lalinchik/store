@@ -139,7 +139,7 @@ body {
     margin: 0 5px 38px;
 }
 
-.attribute-btn:hover {
+.attribute-btn:hover, .attribute-btn.selected {
     background: #e5e5e5;
 }
 

@@ -81,12 +81,21 @@ xhr.addEventListener("load", function (event) {
         attributeEl.classList.add("attribute-btn");
         attributeEl.textContent = size;
 
+
         attributeEl.addEventListener("click", function (event) {
             bagItem.size = size;
+            var selectedSizeEl = productEl.querySelector(".attribute-btn.selected");
+            if (selectedSizeEl) {
+                selectedSizeEl.classList.remove("selected");
+            }
+            attributeEl.classList.add("selected");
+
         });
 
         productEl.querySelector(".attribute").appendChild(attributeEl);
     });
+
+    productEl.querySelector(".attribute-btn").classList.add("selected");
 
     document.querySelector("main").insertBefore(productEl, document.querySelector(".gallery"));
 
