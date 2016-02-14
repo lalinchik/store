@@ -10,11 +10,11 @@ xhr.addEventListener("error", function () {
 
 xhr.addEventListener("load", function (event) {
     let json = JSON.parse(xhr.responseText);
-    console.log(json);
-    
+
     const categoryElements = json.map(function (category) {
         var categoryEl = document.createElement("section");
         categoryEl.classList.add("category");
+        categoryEl.id = category.category.split(" ").join("-");
 
         categoryEl.innerHTML = `<div class="hero">
         <h2 class="block-title">${category.category}</h2>
