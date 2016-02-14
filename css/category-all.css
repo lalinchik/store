@@ -15,11 +15,12 @@ main {
 
 .link:hover {
     text-decoration: underline;
+    color: #303030;
 }
 
 .breadcrumb {
     margin-top: 33px;
-    margin-bottom: 14px;
+    margin-bottom: 14px;.
 }
 
 .breadcrumb ul {

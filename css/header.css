@@ -7,6 +7,11 @@ header {
     padding-bottom: 4px;
 }
 
+.link:hover{
+    text-decoration: underline;
+    color: #303030;
+}
+
 .logo {
     width: 60px;
     height: 55px;
