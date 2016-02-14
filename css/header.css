@@ -34,6 +34,7 @@ header {
     order: 4;
     flex-basis: 100%;
     margin-top: 16px;
+    justify-content: flex-end;
 }
 
 .search-field {
@@ -78,7 +79,7 @@ header {
 .search.collapsed {
     order: 2;
     flex-basis: inherit;
-    margin-top: 6px;
+    margin-top: 5px;
 }
 
 .search.collapsed .search-field {
@@ -148,7 +149,7 @@ header {
 
 @media (min-width: 768px) {
     .search {
-        width: 150px;
+        width: 230px;
         order: 3;
         flex-basis: inherit;
         margin-top: 5px;

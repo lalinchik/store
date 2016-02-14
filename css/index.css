@@ -242,15 +242,6 @@ main h1 {
 }
 
 @media (min-width: 768px) {
-    .search {
-        order: 3;
-        flex-basis: inherit;
-        margin: 0;
-    }
-
-    .search .search-field {
-        width: 150px;
-    }
 
     .photos {
         padding-left: calc((100% - 500px) / 2);
