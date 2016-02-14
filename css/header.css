@@ -148,10 +148,6 @@ header {
         margin-top: 5px;
     }
 
-    .search .search-field {
-        width: 150px;
-    }
-
 }
 
 @media (min-width: 1024px) {
