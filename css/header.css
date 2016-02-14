@@ -148,6 +148,7 @@ header {
 
 @media (min-width: 768px) {
     .search {
+        width: 150px;
         order: 3;
         flex-basis: inherit;
         margin-top: 5px;
