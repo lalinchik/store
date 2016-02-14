@@ -9,9 +9,14 @@ body {
 
 }
 
+main {
+    margin-bottom: 40px;
+}
+
+
 .breadcrumb {
     margin-top: 33px;
-    margin-bottom: 6px;
+    margin-bottom: 14px;
 }
 
 .breadcrumb ul {
@@ -46,7 +51,9 @@ body {
     border-bottom: 1px solid #e5e5e5;
 
 }
-
+main .category:last-of-type{
+    border-bottom: none;
+}
 .hero {
     flex-basis: 100%;
     display: flex;
@@ -55,7 +62,7 @@ body {
 }
 
 .block-title {
-    font-size: 26px;
+    font-size: 36px;
     font-weight: bold;
     color: #303030;
     text-transform: uppercase;
@@ -74,10 +81,12 @@ body {
 }
 
 .goods-item {
+    flex-basis: calc((100% - 40px) / 2);
     height: 312px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     font-size: 14px;
     color: #303030;
     text-align: center;
@@ -92,7 +101,7 @@ body {
     align-items: center;
 }
 
-.wrap-img img{
+.wrap-img img {
     max-width: 100%;
     max-height: 100%;
 }
@@ -101,6 +110,56 @@ body {
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 5px;
+}
+
+.gallery {
+    display: none;
+    height: 120px;
+    /*display: flex;*/
+    position: relative;
+    margin-bottom: 125px;
+}
+
+.gallery-title{
+    display: none;
+    flex-basis: 100%;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #909090;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 45px;
+}
+.arrow{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+    background: #e5e5e5;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.arrow-link{
+    font-size: 26px;
+    color: white;
+}
+
+.photos-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+}
+
+.photos-container img{
+    height: 120px;
 }
 
 @media (min-width: 768px) {
@@ -121,8 +180,6 @@ body {
         padding: 33px;
     }
 
-
-
     .breadcrumb ul {
         justify-content: flex-start;
     }
@@ -136,14 +193,30 @@ body {
         letter-spacing: 1px;
     }
 
+    .block-title{
+        margin-bottom: 55px;
+    }
+
     .category {
         justify-content: space-between;
         padding-left: 0;
         padding-right: 0;
     }
 
-    .wrap-img {
-        width: 165px;
+    .goods-item {
+        flex-basis: calc((100% - 270px) / 4);
+    }
+
+    main .category:last-of-type{
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .gallery-title {
+        display: inline-block;
+        width: 100%;
+    }
+    .gallery {
+        display: flex;
     }
 
 }

@@ -28,7 +28,7 @@ xhr.addEventListener("load", function (event) {
                 <img src="${product.images[0]}" alt="1">
             </a>
             <h3 class="goods-name">${product.name}</h3>
-            <span class="goods-price">€ ${product.price}</span>`
+            <span class="goods-price">€ ${product.price}</span>`;
             categoryEl.appendChild(productEl);
         });
 
@@ -36,6 +36,6 @@ xhr.addEventListener("load", function (event) {
     });
 
     categoryElements.forEach(function (categoryEl) {
-        document.querySelector("main").appendChild(categoryEl);
+        document.querySelector("main").insertBefore(categoryEl, document.querySelector(".gallery-title"));
     })
 });
