@@ -380,6 +380,10 @@ input[type="number"] {
         margin-left: 80px;
     }
 
+    .buy[disabled]{
+        background: #e5e5e5;
+    }
+
     .continue-link {
         margin-bottom: 0;
     }

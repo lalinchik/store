@@ -12,11 +12,16 @@ function updateTotal() {
     }, 0);
 }
 
+function updateOrderNowButton() {
+    document.querySelector(".buy").disabled = !(bag && bag.length);
+}
+
 var bag = JSON.parse(localStorage.getItem("bag"));
-bag.forEach(function (item, index) {
-    var itemEl = document.createElement("div");
-    itemEl.classList.add("cart-item");
-    itemEl.innerHTML = `<div class="photo-wrapper">
+if(bag) {
+    bag.forEach(function (item, index) {
+        var itemEl = document.createElement("div");
+        itemEl.classList.add("cart-item");
+        itemEl.innerHTML = `<div class="photo-wrapper">
         <img class="photo" src="${item.product.images[0]}" alt="">
      </div>
             <div class="column column1">
@@ -34,29 +39,37 @@ bag.forEach(function (item, index) {
                 <a class="delete" href="#">x</a>
             </div>`;
 
-    document.querySelector(".order-cart").insertBefore(itemEl, document.querySelector(".subtotal"));
+        document.querySelector(".order-cart").insertBefore(itemEl, document.querySelector(".subtotal"));
 
 
-    itemEl.querySelector(".quantity").addEventListener("change", function (event) {
-        item.quantity = this.value;
-        itemEl.querySelector(".amount span").textContent = item.product.price * item.quantity;
-        localStorage.setItem("bag", JSON.stringify(bag));
-        updateTotal();
+        itemEl.querySelector(".quantity").addEventListener("change", function (event) {
+            item.quantity = this.value;
+            itemEl.querySelector(".amount span").textContent = item.product.price * item.quantity;
+            localStorage.setItem("bag", JSON.stringify(bag));
+            updateTotal();
+        });
+
+        itemEl.querySelector(".delete").addEventListener("click", function (event) {
+            event.preventDefault();
+            bag.splice(index, 1);
+            localStorage.setItem("bag", JSON.stringify(bag));
+            itemEl.remove();
+            updateTotal();
+            document.querySelector(".quantity").textContent = bag.length;
+            if(!bag.length){
+                updateOrderNowButton();
+            }
+        });
     });
+    updateTotal();
 
-    itemEl.querySelector(".delete").addEventListener("click", function (event) {
-        event.preventDefault();
-        bag.splice(index, 1);
-        localStorage.setItem("bag", JSON.stringify(bag));
-        itemEl.remove();
-        updateTotal();
-        document.querySelector(".quantity").textContent = bag.length;
-    });
-});
+}
+updateOrderNowButton();
 
-updateTotal();
+
 
 document.querySelector(".buy").addEventListener("click", function (event) {
     localStorage.clear();
     window.location = "thank-you.html";
+
 });
