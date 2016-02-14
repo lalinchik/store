@@ -25,11 +25,13 @@ body {
 }
 
 .breadcrumb ul li {
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 .slash:after {
     content: " /  ";
+    position: absolute;
+    margin: 5px 5px;
 }
 
 .breadcrumbs-link {
@@ -229,10 +231,6 @@ body {
 
     .breadcrumb ul {
         justify-content: flex-start;
-    }
-
-    .breadcrumb ul li {
-        padding-right: 5px;
     }
 
     .breadcrumbs-link {

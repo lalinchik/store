@@ -13,6 +13,9 @@ main {
     margin-bottom: 40px;
 }
 
+.link:hover {
+    text-decoration: underline;
+}
 
 .breadcrumb {
     margin-top: 33px;
@@ -25,12 +28,15 @@ main {
 }
 
 .breadcrumb ul li {
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 .slash:after {
     content: " /  ";
+    position: absolute;
+    margin: 5px 5px;
 }
+
 
 .breadcrumbs-link {
     font-size: 16px;
@@ -39,9 +45,7 @@ main {
     text-decoration: none;
 }
 
-.link:hover {
-    text-decoration: underline;
-}
+
 
 .category {
     display: flex;
@@ -182,10 +186,6 @@ main .category:last-of-type{
 
     .breadcrumb ul {
         justify-content: flex-start;
-    }
-
-    .breadcrumb ul li {
-        padding-right: 5px;
     }
 
     .breadcrumbs-link {
