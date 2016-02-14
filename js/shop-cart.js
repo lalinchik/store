@@ -27,7 +27,7 @@ bag.forEach(function (item, index) {
                 </div>
                 <span class="color">${item.color}</span>
                 <span class="size">${item.size}</span>
-                <input class="quantity" type="number" value="${item.quantity}">
+                <input class="quantity" type="number" value="${item.quantity}" min="1">
             </div>
             <div class="column column2">
                 <span class="amount">€ <span>${item.product.price * item.quantity}</span></span>
