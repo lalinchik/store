@@ -50,7 +50,7 @@ bag.forEach(function (item, index) {
         localStorage.setItem("bag", JSON.stringify(bag));
         itemEl.remove();
         updateTotal();
-        document.querySelector(".quantity").textContent == bag.length;
+        document.querySelector(".quantity").textContent = bag.length;
     });
 });
 
