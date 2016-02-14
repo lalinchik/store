@@ -30,7 +30,7 @@ xhr.addEventListener("load", function (event) {
         return category.id == getQueryParams().categoryId;
     });
 
-    if (product) {
+    if (!category) {
         window.location = "notFound.html";
     }
     var product = category.products.find(function (product) {
