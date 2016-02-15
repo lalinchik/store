@@ -12,6 +12,14 @@ header {
     color: #303030;
 }
 
+input:focus, button:focus {
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
 .logo {
     width: 60px;
     height: 55px;
